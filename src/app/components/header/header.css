@@ -1,0 +1,26 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1976d2;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.app-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.app-header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.app-header nav a:hover,
+.app-header nav a.active {
+  color: #ffeb3b;
+}
