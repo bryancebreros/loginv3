@@ -8,7 +8,6 @@ interface Videojuego {
   imagen: string;
   fecha: string;
   rating: number;
-
 }
 
 const JUEGOS_INICIALES: Videojuego[] = [

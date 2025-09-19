@@ -1,0 +1,32 @@
+<div class="add-game-container">
+  <h2>Agregar Videojuego</h2>
+
+  <form (ngSubmit)="agregarJuego()">
+    <div class="form-group">
+      <label>Título</label>
+      <input type="text" [(ngModel)]="nuevoJuego.titulo" name="titulo" required />
+    </div>
+
+    <div class="form-group">
+      <label>Descripción</label>
+      <textarea [(ngModel)]="nuevoJuego.descripcion" name="descripcion" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>URL de Imagen</label>
+      <input type="text" [(ngModel)]="nuevoJuego.imagen" name="imagen" required />
+    </div>
+
+    <div class="form-group">
+      <label>Fecha de Lanzamiento</label>
+      <input type="date" [(ngModel)]="nuevoJuego.fecha" name="fecha" required />
+    </div>
+
+    <div class="form-group">
+      <label>Rating (0-5)</label>
+      <input type="number" [(ngModel)]="nuevoJuego.rating" name="rating" min="0" max="5" required />
+    </div>
+
+    <button type="submit">Agregar Juego</button>
+  </form>
+</div>
