@@ -1,0 +1,13 @@
+<div class="home-container">
+  <h2>🎮 Lista de Videojuegos</h2>
+
+  <div class="grid">
+    <div class="card" *ngFor="let juego of juegos">
+      <img [src]="juego.imagen" alt="{{juego.titulo}}" />
+      <h3>{{ juego.titulo }}</h3>
+      <p>{{ juego.descripcion }}</p>
+      <p>RATING: {{ juego.rating }}</p>
+      <p>{{juego.fecha}}</p>
+    </div>
+  </div>
+</div>
